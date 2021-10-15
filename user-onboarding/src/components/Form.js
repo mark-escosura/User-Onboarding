@@ -36,6 +36,7 @@ function Form(props) {
                     onChange={onChange}
                     name="name"
                     type="text"
+                    placeholder="Username here"
                 />
             </label>
 
@@ -49,6 +50,7 @@ function Form(props) {
                     onChange={onChange}
                     name="email"
                     type="text"
+                    placeholder="Email goes here"
                 />
             </label>
 
@@ -62,6 +64,7 @@ function Form(props) {
                     onChange={onChange}
                     name="password"
                     type="password"
+                    placeholder="Password goes here"
                 />
             </label>
 
@@ -79,7 +82,7 @@ function Form(props) {
             </label>
 
             {/* 🔥 DISABLE THE BUTTON */}
-            <button disabled={disabled}>submit</button>
+            <button id="submitBtn" disabled={disabled}>submit</button>
 
             <div className='errors'>
             {/* 🔥 RENDER THE VALIDATION ERRORS HERE */}
